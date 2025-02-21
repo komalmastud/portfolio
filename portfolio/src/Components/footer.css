@@ -1,0 +1,41 @@
+/* Footer Styles */
+.footer {
+  background-color: #111827; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.social-icons a:hover {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.social-icons a:nth-child(1):hover {
+  color: #171515; /* GitHub dark */
+}
+
+.social-icons a:nth-child(2):hover {
+  color: #0077b5; /* LinkedIn blue */
+}
