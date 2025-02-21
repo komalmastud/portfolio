@@ -1,8 +1,7 @@
-/* Project.css */
-
+/* General Section Styling */
 .projects-section {
   padding: 50px 20px;
-  background-color: #1c1e53;
+  background-color: #1c1e53; /* Keeping the dark blue */
   text-align: center;
 }
 
@@ -11,13 +10,15 @@
   margin: 0 auto;
 }
 
+/* Headings */
 h1 {
   font-size: 2.5rem;
-  color: #ffff;
+  color: #eaeaea; /* Slightly off-white for better contrast */
   margin-bottom: 20px;
   font-weight: bold;
 }
 
+/* Grid Layout */
 .projects-grid,
 .templates-grid {
   display: grid;
@@ -28,9 +29,10 @@ h1 {
   padding: 10px;
 }
 
+/* Card Styling */
 .project-card,
 .template-card {
-  background: #fff;
+  background: #f8fafc; /* Soft light blue-gray for a clean look */
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -44,27 +46,30 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Card Headings */
 .project-card h2,
 .template-card h2 {
   font-size: 1.6rem;
-  color: #222;
+  color: #222; /* Dark gray for strong contrast */
   margin-bottom: 12px;
   font-weight: 600;
 }
 
+/* Card Paragraphs */
 .project-card p,
 .template-card p {
   font-size: 1rem;
-  color: #555;
+  color: #b0b3c4; /* Softer gray for readability */
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
+/* Call-to-Action Buttons */
 .project-card a,
 .template-card a {
   display: inline-block;
-  background-color: #e2c000;
-  color: black;
+  background-color: #f4c430; /* Warmer gold for an elegant look */
+  color: #1c1e53; /* Dark blue text for contrast */
   padding: 12px 18px;
   border-radius: 6px;
   text-decoration: none;
@@ -74,18 +79,12 @@ h1 {
 
 .project-card a:hover,
 .template-card a:hover {
-  background-color: #0056b3;
+  background-color: #0078d7; /* Modern blue */
+  color: #fff;
   transform: scale(1.05);
 }
 
-.template-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-/* Improved Template Styles */
+/* Template Card Enhancements */
 .template-card {
   display: flex;
   flex-direction: column;
@@ -95,15 +94,24 @@ h1 {
   padding: 30px;
 }
 
+/* Image Styling */
+.template-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
 .template-card img {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+  border: 2px solid #dddddd; /* Soft gray border */
 }
 
-/* Slider styles */
+/* Slider Image Styling */
 .slider-image-container {
   display: flex;
   justify-content: center;

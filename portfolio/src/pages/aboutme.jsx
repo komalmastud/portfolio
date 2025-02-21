@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
-import myImage from "../assets/aboutme.jpeg"; // Ensure the correct path
+import myImage from "../assets/about-me.jpeg"; // Ensure the correct path
 
 const AboutMe = () => {
   return (

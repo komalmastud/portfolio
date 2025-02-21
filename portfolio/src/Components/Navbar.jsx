@@ -21,45 +21,45 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className={menuOpen ? "nav-links active" : "nav-links"}>
           <li>
-            <NavLink 
-              to="/" 
-              className={({ isActive }) => (isActive ? "active" : "")} 
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
               onClick={() => setMenuOpen(false)}
             >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/about" 
-              className={({ isActive }) => (isActive ? "active" : "")} 
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
               onClick={() => setMenuOpen(false)}
             >
               About Me
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/skills" 
-              className={({ isActive }) => (isActive ? "active" : "")} 
+            <NavLink
+              to="/skills"
+              className={({ isActive }) => (isActive ? "active" : "")}
               onClick={() => setMenuOpen(false)}
             >
               My Skills
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/projects" 
-              className={({ isActive }) => (isActive ? "active" : "")} 
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => (isActive ? "active" : "")}
               onClick={() => setMenuOpen(false)}
             >
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to="/contact" 
-              className={({ isActive }) => (isActive ? "active" : "")} 
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
               onClick={() => setMenuOpen(false)}
             >
               Contact

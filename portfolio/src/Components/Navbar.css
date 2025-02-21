@@ -3,7 +3,7 @@
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: center; /* Center navbar items */
+  justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   max-width: 1200px; /* Prevents stretching on larger screens */
 }
 
@@ -54,12 +54,13 @@
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
+  margin-right: 33px; /* Move the icon slightly left */
 }
 
 /* Responsive Navbar for Mobile */
 @media (max-width: 768px) {
-  .navbar-container {
-    justify-content: space-between; /* Ensures spacing in mobile */
+  .navbar {
+    padding: 1rem; /* Reduce padding for smaller screens */
   }
 
   .menu-icon {
@@ -69,13 +70,13 @@
   .nav-links {
     display: none;
     flex-direction: column;
-    align-items: center; /* Center menu items */
-    width: 100%;
+    align-items: flex-start; /* Align items to the left */
+    width: 80%; /* Reduce the width of the dropdown */
     position: absolute;
-    top: 60px;
-    left: 0;
+    top: 60px; /* Adjust based on navbar height */
+    left: 10px; /* Move the dropdown slightly left */
     background: #1c1e53;
-    padding: 1rem;
+    padding: 1rem; /* Add padding for better spacing */
   }
 
   .nav-links.active {
@@ -84,5 +85,21 @@
 
   .nav-links li {
     margin: 10px 0;
+  }
+}
+
+/* Additional Breakpoint for Very Small Screens */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem; /* Smaller logo for very small screens */
+  }
+
+  .menu-icon {
+    font-size: 1.5rem; /* Smaller menu icon */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Smaller font size for links */
+    padding: 6px 10px; /* Smaller padding for links */
   }
 }
